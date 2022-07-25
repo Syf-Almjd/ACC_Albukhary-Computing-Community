@@ -25,7 +25,6 @@ public class dashboardFragment extends Fragment {
     TextView wlcUser;
     CardView home, osiDash;
 
-
     public dashboardFragment() {
     }
 
@@ -55,7 +54,6 @@ public class dashboardFragment extends Fragment {
             }
 
         });
-
 //    wlcUser =view.findViewById(R.id.txtHello);
 //        wlcUser.setText("");
         return view;

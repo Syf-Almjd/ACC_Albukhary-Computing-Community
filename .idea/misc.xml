@@ -32,6 +32,7 @@
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_notifications_white_24dp.xml" value="0.1145" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/login.xml" value="0.166" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/login_shape_bk.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/logout.xml" value="0.1795" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/search_bg.xml" value="0.166" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/search_bg2.xml" value="0.1795" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/shape.xml" value="0.1" />
@@ -56,7 +57,7 @@
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/asd.xml" value="0.19875" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/frag2.xml" value="0.38125" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_account.xml" value="0.17109375" />
-        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_account1.xml" value="0.264" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_account1.xml" value="0.4" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_chat.xml" value="0.16328125" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_home.xml" value="0.16328125" />

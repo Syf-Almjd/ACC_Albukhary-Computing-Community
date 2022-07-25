@@ -19,6 +19,68 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+
+//private static final int GALLERY_INTENT_CODE = 1023 ;
+//private static FirebaseAuth fAuth;
+//        Button logout;
+//        TextView fullName,email,phone,verifyMsg;
+//        FirebaseFirestore fStore;
+//        String userId;
+//        Button resendCode, resetPassLocal;
+//        CardView changeProfileImage;
+//        FirebaseUser user;
+//        ImageView profileImage;
+//        StorageReference storageReference;
+//        phone = v.findViewById(R.id.ACCphone);
+//        fullName = v.findViewById(R.id.ACCname);
+//        email    = v.findViewById(R.id.ACCemail);
+////        resetPassLocal = v.findViewById(R.id.resetPasswordLocal);
+//
+//        profileImage = v.findViewById(R.id.ACCimage);
+//        changeProfileImage = v.findViewById(R.id.ACCimgFrame);
+//
+//        fAuth = FirebaseAuth.getInstance();
+//        fStore = FirebaseFirestore.getInstance();
+//        storageReference = FirebaseStorage.getInstance().getReference();
+//
+//        StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
+//        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+//            @Override
+//            public void onSuccess(Uri uri) {
+//                Picasso.get().load("https://cdn0.iconfinder.com/data/icons/user-interface-user-experience-4-3/24/165-512.png").into(profileImage);
+//
+//            }
+//        });
+
+//        resendCode = v.findViewById(R.id.resendCode);
+//        verifyMsg = v.findViewById(R.id.verifyMsg);
+
+//        userId = fAuth.getCurrentUser().getUid();
+//        user = fAuth.getCurrentUser();
+
+//        if(!user.isEmailVerified()){
+////            verifyMsg.setVisibility(View.VISIBLE);
+////            resendCode.setVisibility(View.VISIBLE);
+//
+//            resendCode.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(final View v) {
+//
+//                    user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+//                        @Override
+//                        public void onSuccess(Void aVoid) {
+//                            Toast.makeText(v.getContext(), "Verification Email Has been Sent.", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }).addOnFailureListener(new OnFailureListener() {
+//                        @Override
+//                        public void onFailure(@NonNull Exception e) {
+//                            Log.d("tag", "onFailure: Email not sent " + e.getMessage());
+//                        }
+//                    });
+//                }
+//            });
+//        }
+//        logoutFun(v);
 public class asdds extends AppCompatActivity {
     //    AsyncTask<String, Void, String>
     String data = "pass=ahmed&nama=asd&x=37&y=18";
