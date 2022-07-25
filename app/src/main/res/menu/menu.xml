@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/store"
+        android:icon="@drawable/store"
+        android:title="Store" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/news"
+        android:title="News" />
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chat"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/user"
+        android:title="Account" />
+
+
+</menu>

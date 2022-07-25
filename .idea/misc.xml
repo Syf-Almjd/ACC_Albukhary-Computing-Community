@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/arrow.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/asd.xml" value="0.166" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/book.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/circleyellowfil.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/logout.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/news.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/shape.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable-v24/worldwide.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/arrow_back.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/asd.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/asddsa.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/bg_circle.xml" value="0.166" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/book.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/btn_blue_normal.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/btn_blue_pressed.xml" value="0.1795" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/btn_blue_selector.xml" value="0.166" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/circleyellowfil.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/circular_grey_bordersolid.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/circular_grey_bordersolid2.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/home_bg.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_baseline_dashboard_2222222224.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1795" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_call_24dp.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_email_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_location_24dp.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_login_bk.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/ic_notifications_white_24dp.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/login.xml" value="0.166" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/login_shape_bk.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/search_bg.xml" value="0.166" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/search_bg2.xml" value="0.1795" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/shape.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/shape_btn.xml" value="0.1225" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/shapebtn.xml" value="0.1225" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/shapebtn1.xml" value="0.1225" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/store.xml" value="0.1145" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/drawable/style_bg.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_asdds.xml" value="0.25" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_forgot.xml" value="0.12125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_fragement_start.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_mai1.xml" value="0.12125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_main.xml" value="0.38125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_main_page.xml" value="0.136" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_osi_aiu.xml" value="0.16328125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_push_notification.xml" value="0.19875" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_registration.xml" value="0.264" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/activity_webview_page.xml" value="0.152" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/asd.xml" value="0.19875" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/frag2.xml" value="0.38125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_account.xml" value="0.17109375" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_account1.xml" value="0.264" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_chat.xml" value="0.16328125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_home.xml" value="0.16328125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/fragment_store.xml" value="0.16328125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/keys.xml" value="0.19875" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/login.xml" value="0.264" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/login_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/notifications.xml" value="0.38125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/layout/shape.xml" value="0.16328125" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/ACC_Albukhary_Computing_Community/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/bg_circle.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/book.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/btn_blue_normal.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/btn_blue_pressed.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/btn_blue_selector.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/category.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/chat.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/home.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/ic_outline_message_24.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/news.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/store.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/drawable/user.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/activity_example1.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/activity_webview_page.xml" value="0.176" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/fragment_account.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/fragment_book.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/fragment_category.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/layout/fragment_store.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/menu/menu.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1225" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1225" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/mipmap-anydpi-v26/news.xml" value="0.1" />
+        <entry key="..\:/Users/syfal/AndroidStudioProjects/AnimatedBottomBar/app/src/main/res/mipmap-anydpi-v26/news_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
