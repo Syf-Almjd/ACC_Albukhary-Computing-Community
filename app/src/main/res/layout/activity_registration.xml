@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/login_background"
     tools:context=".activity.registration">
 
@@ -45,7 +44,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/RegPhone"
+        android:id="@+id/StudentIDReg"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/Regemail"
@@ -53,8 +52,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="70dp"
         android:background="@drawable/search_bg"
-        android:hint="Phone Number"
-        android:inputType="number"
+        android:hint="Student ID"
+        android:inputType="text"
         android:singleLine="true"
         android:textAlignment="center"
         android:textColorHint="#A7A7A7">
@@ -62,10 +61,25 @@
     </EditText>
 
     <EditText
+        android:id="@+id/regPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/StudentIDReg"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/search_bg"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColorHint="#A7A7A7">d</EditText>
+
+    <EditText
         android:id="@+id/Regpass"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@+id/RegPhone"
+        android:layout_below="@+id/regPhone"
         android:layout_marginStart="70dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="70dp"
@@ -85,10 +99,10 @@
         android:layout_height="100dp"
         android:layout_below="@+id/ButtonLog"
         android:layout_centerHorizontal="true"
-        android:text="Register"
         android:layout_marginTop="20dp"
         android:background="@drawable/search_bg"
         android:backgroundTint="@color/colorP2"
+        android:text="Register"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"

@@ -23,8 +23,8 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/emailasd"
-        tools:layout_editor_absoluteX="166dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="166dp" />
 
     <Button
         android:id="@+id/save"

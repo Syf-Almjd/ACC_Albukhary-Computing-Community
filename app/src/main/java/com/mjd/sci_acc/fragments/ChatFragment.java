@@ -1,7 +1,5 @@
 package com.mjd.sci_acc.fragments;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -17,8 +15,6 @@ import androidx.fragment.app.Fragment;
 
 import com.mjd.sci_acc.R;
 
-import java.net.HttpURLConnection;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +22,7 @@ import java.net.HttpURLConnection;
 public class ChatFragment extends Fragment {
     public WebView mWebview;
     RelativeLayout whiteLine;
+
     public ChatFragment() {
     }
 
@@ -36,12 +33,24 @@ public class ChatFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.activity_webview_page, container, false);
 
-        mWebview = (WebView) view.findViewById(R.id.confirmpage_webpage);
+        mWebview = view.findViewById(R.id.confirmpage_webpage);
         whiteLine = view.findViewById(R.id.WhiteLine);
         whiteLine.setVisibility(View.VISIBLE);
         WebSettings setting = mWebview.getSettings();
         mWebview.getSettings().setJavaScriptEnabled(true);
-
+        WebSettings webSettings = mWebview.getSettings();
+        webSettings.setSupportMultipleWindows(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setDatabaseEnabled(true);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setAllowContentAccess(true);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setSupportZoom(true);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(false);
+        webSettings.setUseWideViewPort(true);
         mWebview.setWebViewClient(new WebViewClient());
         mWebview.loadUrl("https://deadsimplechat.com/UH56z7Lga");
         mWebview.setFocusableInTouchMode(true);
@@ -61,31 +70,7 @@ public class ChatFragment extends Fragment {
         });
         return view;
     }
-    public void get_cookie(HttpURLConnection conn) {
-        SharedPreferences sh_pref_cookie = requireContext().getSharedPreferences("cookies", Context.MODE_PRIVATE);
-        String cook_new;
-        String COOKIES_HEADER;
-        if (conn.getHeaderField("Set-Cookie") != null) {
-            COOKIES_HEADER = "Set-Cookie";
-        }
-        else {
-            COOKIES_HEADER = "Cookie";
-        }
-        cook_new = conn.getHeaderField(COOKIES_HEADER);
-        if (cook_new.indexOf("sid", 0) >= 0) {
-            SharedPreferences.Editor editor = sh_pref_cookie.edit();
-            editor.putString("Cookie", cook_new);
-            editor.commit();
-        }
-    }
-    public void set_cookie(HttpURLConnection conn) {
-        SharedPreferences sh_pref_cookie = getActivity().getSharedPreferences("cookies", Context.MODE_PRIVATE);
-        String COOKIES_HEADER = "Cookie";
-        String cook = sh_pref_cookie.getString(COOKIES_HEADER, "no_cookie");
-        if (!cook.equals("no_cookie")) {
-            conn.setRequestProperty(COOKIES_HEADER, cook);
-        }
-    }
+
 }
 
 

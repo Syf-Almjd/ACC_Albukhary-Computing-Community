@@ -3,7 +3,6 @@ package com.mjd.sci_acc.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.webkit.WebView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,16 +21,12 @@ import org.jetbrains.annotations.Nullable;
 import nl.joery.animatedbottombar.AnimatedBottomBar;
 
 public class fragmentStart extends AppCompatActivity {
-    private static final String TAG = fragmentStart.class.getSimpleName();
-    AnimatedBottomBar animatedBottomBar;
-    WebView webView;
-
     public HomeFragment HomeFragment = new HomeFragment();
     public dashboardFragment dashboardFragment = new dashboardFragment();
     public ChatFragment ChatFragment = new ChatFragment();
     public StoreFragment StoreFragment = new StoreFragment();
     public AccountFragment AccountFragment = new AccountFragment();
-
+    AnimatedBottomBar animatedBottomBar;
     Fragment selected = HomeFragment;
 
     @Override
@@ -45,8 +40,8 @@ public class fragmentStart extends AppCompatActivity {
         createFragment(StoreFragment);
         createFragment(AccountFragment);
 
-            animatedBottomBar.selectTabById(R.id.home, true);
-            showFragment(HomeFragment);
+        animatedBottomBar.selectTabById(R.id.home, true);
+        showFragment(HomeFragment);
 
 
         animatedBottomBar.setOnTabSelectListener(new AnimatedBottomBar.OnTabSelectListener() {
@@ -86,23 +81,25 @@ public class fragmentStart extends AppCompatActivity {
         });
     }
 
-    private void createFragment(Fragment fragment){
+    private void createFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fragment_container, fragment)
                 .hide(fragment)
                 .commit();
     }
-    private void showFragment(Fragment fragment){
+
+    private void showFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .show(fragment)
                 .commit();
     }
 
-    private void hideFragment(Fragment fragment){
+    private void hideFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .hide(fragment)
                 .commit();
     }
+
     @Override
     public void onBackPressed() {
         startActivity(new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME));

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dash.aiu_schools">
+
+    <Button
+        android:id="@+id/Foundation"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_above="@+id/SCI"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/LC"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Foundation"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/LC"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_above="@+id/SCI"
+        android:layout_below="@+id/SBSS"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Language Center"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/SCI"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="School of Computing and Informatics"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/SBSS"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/Foundation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="School of Business &amp; Social Sciences"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/SEHS"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/SBSS"
+        android:layout_below="@+id/backbtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Schools of Education &amp; Human Sciences"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_back" />
+
+</RelativeLayout>

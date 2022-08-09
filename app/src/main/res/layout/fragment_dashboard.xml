@@ -1,274 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimaryDark"
     tools:context=".fragments.dashboardFragment">
 
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
-            android:text="ACC Students Home"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="ACC Students Home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
-        android:text="Welcome to your Dashboard, Saif!"
-        android:textSize="18dp"
+        android:layout_marginEnd="2dp"
+        android:text="Welcome to your Dashboard!"
         android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/home_bg"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHello">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
-            android:background="@drawable/home_bg"
-            android:elevation="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Menu"
+            android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtHello">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:textStyle="bold"
-                android:text="Menu"
-                android:textSize="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/homeDash"
+            style="@style/cardViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/home_card_height"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/homeDash"
-                style="@style/cardViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/home_card_height"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView4"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
+            <!-- TODO: change to make both webstie for aiu websites -->
+            <!-- TODO: contact page for staff -->
+            <!-- TODO: about ACC and founder supports, pale and MY -->
+            <!-- TODO: social busness aiu -->
+            <!-- TODO: 3 zeros -->
+            <!-- TODO: Announcement -->
 
-                >
-                <!-- TODO: change to make both webstie for aiu websites -->
-                <!-- TODO: contact page for staff -->
-                <!-- TODO: about ACC and founder supports, pale and MY -->
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="@dimen/home_image_view_size"
-                        android:layout_height="@dimen/home_image_view_size"
-                        android:layout_marginStart="24dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/aiu_logo" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/home_image_view_size"
+                    android:layout_height="@dimen/home_image_view_size"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aiu_logo" />
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        style="@style/categoryHeadingTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="24dp"
-                        android:text="AIU Offical Website"
-                        android:textAlignment="center"
-                        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                        app:layout_constraintStart_toEndOf="@+id/imageView2"
-                        app:layout_constraintTop_toTopOf="@+id/imageView2" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/categoryHeadingTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:gravity="center"
+                    android:text="Albukhary\nInternational University"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CourseDash"
+            style="@style/cardViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/home_card_height"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/socialDash"
+            app:layout_constraintStart_toStartOf="@+id/socialDash"
+            app:layout_constraintTop_toBottomOf="@+id/socialDash">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/osiDash"
-                style="@style/cardViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/home_card_height"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toStartOf="@+id/cvHistory"
-                app:layout_constraintStart_toStartOf="@+id/homeDash"
-                app:layout_constraintTop_toBottomOf="@+id/homeDash">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="@dimen/home_image_view_size"
-                        android:layout_height="@dimen/home_image_view_size"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.35"
-                        app:srcCompat="@drawable/book" />
-
-                    <TextView
-                        style="@style/categoryHeadingTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Albukhary OSI Portal"
-                        android:textAlignment="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cvHistory"
-                android:layout_width="0dp"
-                style="@style/cardViewStyle"
-                android:layout_height="@dimen/home_card_height"
-                app:layout_constraintBottom_toBottomOf="@+id/osiDash"
-                app:layout_constraintEnd_toEndOf="@+id/homeDash"
-                app:layout_constraintStart_toEndOf="@+id/osiDash"
-                app:layout_constraintTop_toTopOf="@+id/osiDash" >
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="@dimen/home_image_view_size"
-                        android:layout_height="@dimen/home_image_view_size"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintVertical_bias="0.35"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/worldwide" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/home_image_view_size"
+                    android:layout_height="@dimen/home_image_view_size"
+                    android:src="@drawable/book"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35" />
 
-                    <TextView
-                        style="@style/categoryHeadingTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Social Community"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                <TextView
+                    style="@style/categoryHeadingTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills Courses"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cvEditPassword"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/home_card_height"
-                style="@style/cardViewStyle"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="@+id/osiDash"
-                app:layout_constraintStart_toStartOf="@+id/osiDash"
-                app:layout_constraintTop_toBottomOf="@+id/osiDash" >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/InternDash"
+            style="@style/cardViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/home_card_height"
+            app:layout_constraintBottom_toBottomOf="@+id/CourseDash"
+            app:layout_constraintEnd_toEndOf="@+id/eventDash"
+            app:layout_constraintStart_toStartOf="@+id/eventDash"
+            app:layout_constraintTop_toTopOf="@+id/CourseDash">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/home_image_view_size"
+                    android:layout_height="@dimen/home_image_view_size"
+                    android:src="@drawable/internship"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35" />
 
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="@dimen/home_image_view_size"
-                        android:layout_height="@dimen/home_image_view_size"
-                        android:src="@drawable/keys"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.35" />
-
-                    <TextView
-                        style="@style/categoryHeadingTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Announcement"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cvLogout"
-                android:layout_width="0dp"
-                style="@style/cardViewStyle"
-                android:layout_height="@dimen/home_card_height"
-                app:layout_constraintBottom_toBottomOf="@+id/cvEditPassword"
-                app:layout_constraintEnd_toEndOf="@+id/cvHistory"
-                app:layout_constraintStart_toStartOf="@+id/cvHistory"
-                app:layout_constraintTop_toTopOf="@+id/cvEditPassword" >
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="@dimen/home_image_view_size"
-                        android:layout_height="@dimen/home_image_view_size"
-                        android:src="@drawable/logout"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.35" />
-
-                    <TextView
-                        style="@style/categoryHeadingTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Internship"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                <TextView
+                    style="@style/categoryHeadingTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Intern &amp; Traineeship"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/socialDash"
+            style="@style/cardViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/home_card_height"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/eventDash"
+            app:layout_constraintStart_toStartOf="@+id/homeDash"
+            app:layout_constraintTop_toBottomOf="@+id/homeDash">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/home_image_view_size"
+                    android:layout_height="@dimen/home_image_view_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35"
+                    app:srcCompat="@drawable/worldwide" />
+
+                <TextView
+                    style="@style/categoryHeadingTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Social Project"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eventDash"
+            style="@style/cardViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/home_card_height"
+            app:layout_constraintBottom_toBottomOf="@+id/socialDash"
+            app:layout_constraintEnd_toEndOf="@+id/homeDash"
+            app:layout_constraintStart_toEndOf="@+id/socialDash"
+            app:layout_constraintTop_toTopOf="@+id/socialDash">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-            </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/home_image_view_size"
+                    android:layout_height="@dimen/home_image_view_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35"
+                    app:srcCompat="@drawable/announcement" />
 
+                <TextView
+                    style="@style/categoryHeadingTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Events &amp;\nAnnouncements"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

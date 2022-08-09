@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/nonet_pic"
+        android:layout_width="369dp"
+        android:layout_height="301dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/no_internet_photo" />
+
+
+    <TextView
+        android:id="@+id/nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nonet_pic"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/semibold"
+        android:text="No internet connection!"
+        android:textColor="#FF212121"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nonet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nonet"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="ACC will not be able to connect to the AI Server without internet."
+        android:textAlignment="center"
+        android:textColor="#FF757575"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/retry_btn"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/nonet2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/search_bg2"
+        android:text="Retry"
+        android:textAllCaps="false"
+        android:textColor="#FF212121" />
+</RelativeLayout>

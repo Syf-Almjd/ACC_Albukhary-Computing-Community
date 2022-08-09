@@ -29,10 +29,9 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.activity_webview_page, container, false);
 
-        mWebview = (WebView) view.findViewById(R.id.confirmpage_webpage);
+        mWebview = view.findViewById(R.id.confirmpage_webpage);
         WebSettings setting = mWebview.getSettings();
         mWebview.getSettings().setJavaScriptEnabled(true);
-
         mWebview.setWebViewClient(new WebViewClient());
         mWebview.loadUrl("https://thenextweb.com/");
         mWebview.setFocusableInTouchMode(true);

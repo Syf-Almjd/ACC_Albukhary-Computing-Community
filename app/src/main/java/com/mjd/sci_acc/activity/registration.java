@@ -32,12 +32,12 @@ public class registration extends AppCompatActivity {
     private static final String TAG = fragmentStart.class.getSimpleName();
     private static FirebaseAuth mAuth;
     Button log, mainReg;
-    EditText User_email, User_password, User_phone, User_name;
-    String name, email, password, phone;
+    EditText User_email, User_password, User_phone, Student_ID, User_name;
+    String name, email, password, phone, StudentID;
     ProgressBar progressBar;
     TextView forgot;
     FirebaseFirestore fStore;
-    String userID;
+    String userID, Description = "No Description yet!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,9 @@ public class registration extends AppCompatActivity {
         User_name = findViewById(R.id.Regname);
         User_email = findViewById(R.id.Regemail);
         User_password = findViewById(R.id.Regpass);
-        User_phone = findViewById(R.id.RegPhone);
+        Student_ID = findViewById(R.id.StudentIDReg);
+        User_phone = findViewById(R.id.regPhone);
+
         progressBar = findViewById(R.id.progressBarReg);
 
         fStore = FirebaseFirestore.getInstance();
@@ -56,7 +58,7 @@ public class registration extends AppCompatActivity {
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                        startActivity(new Intent(registration.this, ForgotPassword.class));
+                startActivity(new Intent(registration.this, ForgotPassword.class));
             }
         });
 
@@ -77,13 +79,22 @@ public class registration extends AppCompatActivity {
                 email = User_email.getText().toString().trim();
                 password = User_password.getText().toString().trim();
                 phone = User_phone.getText().toString().trim();
+                StudentID = Student_ID.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
                     User_email.setError("Email is Required.");
                     return;
                 }
+                if (TextUtils.isEmpty(StudentID)) {
+                    Student_ID.setError("Student ID is Required.");
+                    return;
+                }
+                if (TextUtils.isEmpty(name)) {
+                    User_name.setError("Name is Required.");
+                    return;
+                }
                 if (TextUtils.isEmpty(phone)) {
-                    User_phone.setError("Phone Number is Required.");
+                    User_phone.setError("Phone number is Required.");
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
@@ -94,14 +105,27 @@ public class registration extends AppCompatActivity {
                     User_password.setError("Password Must be >= 6 Characters");
                     return;
                 }
+                if (name.length() < 10) {
+                    Toast.makeText(registration.this, "Name Not Found!", Toast.LENGTH_SHORT).show();
+                    User_name.setError("Please Type Full Name");
+                    return;
+                }
+                if (phone.length() < 9) {
+                    User_phone.setError("Phone Must be >= 9 Numbers");
+                    return;
+                }
+                if (StudentID.length() < 8) {
+                    Student_ID.setError("Student ID Must be = 8 Numbers");
+                    return;
+                }
                 progressBar.setVisibility(View.VISIBLE);
-
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(registration.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     FirebaseUser fuser = mAuth.getCurrentUser();
+
                                     fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {
@@ -116,26 +140,32 @@ public class registration extends AppCompatActivity {
 
                                     Toast.makeText(registration.this, "User Created.", Toast.LENGTH_SHORT).show();
                                     userID = mAuth.getCurrentUser().getUid();
+                                    boolean isVerified = mAuth.getCurrentUser().isEmailVerified();
+
                                     DocumentReference documentReference = fStore.collection("users").document(userID);
-                                    Map<String,Object> user = new HashMap<>();
-                                    user.put("fName",name);
-                                    user.put("email",email);
-                                    user.put("phone",phone);
+                                    Map<String, Object> user = new HashMap<>();
+                                    user.put("fName", name);
+                                    user.put("email", email);
+                                    user.put("StudentID", StudentID);
+                                    user.put("Phone", phone);
+                                    user.put("isVerified", isVerified);
+                                    user.put("userID", userID);
+                                    user.put("description", Description);
 
                                     documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {
-                                            Log.d(TAG, "onSuccess: user Profile is created for "+ userID);
+                                            Log.d(TAG, "onSuccess: user Profile is created for " + userID);
                                         }
                                     }).addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
-                                            Log.d(TAG, "onFailure: " + e.toString());
+                                            Log.d(TAG, "onFailure: " + e);
                                         }
                                     });
 
                                     Log.d(TAG, "createUserWithEmail:success");
-                                    Toast.makeText(registration.this, "Authentication Success.",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(registration.this, "Authentication Success.", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(registration.this, fragmentStart.class));
                                     finish();
                                 } else {

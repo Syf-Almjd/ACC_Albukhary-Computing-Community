@@ -29,6 +29,7 @@ public class login extends AppCompatActivity {
     String email, password;
     ProgressBar progressBar;
     TextView forgot;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +43,7 @@ public class login extends AppCompatActivity {
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    startActivity(new Intent(login.this, ForgotPassword.class));
+                startActivity(new Intent(login.this, ForgotPassword.class));
             }
         });
 
@@ -82,7 +83,7 @@ public class login extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    Toast.makeText(login.this, "Authentication Success.",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(login.this, "Authentication Success.", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(login.this, fragmentStart.class));
                                     finish();
                                 } else {

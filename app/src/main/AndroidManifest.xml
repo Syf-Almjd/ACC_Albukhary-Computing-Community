@@ -17,16 +17,64 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".Dash.OSI_Dash"
+            android:name=".activity.edit_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.heart_items_Store"
+            android:exported="false" />
+        <activity
+            android:name=".activity.founder"
+            android:exported="false" />
+        <activity
+            android:name=".activity.IDReconize"
+            android:exported="false" />
+        <activity
+            android:name=".activity.contact"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ContactACC"
+            android:exported="false" />
+        <activity
+            android:name=".activity.add_item_page"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.aiu_schools"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.Eventadd"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.Aca_Calender"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.mcmc"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.socialDash"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.eventLayout"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.internDash"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.CourseDash"
+            android:exported="false" />
+        <activity
+            android:name=".activity.no_internet"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.accLayout"
+            android:exported="false" />
+        <activity
+            android:name=".Dash.aiuLayout"
             android:exported="false" />
         <activity
             android:name=".activity.asdds"
-            android:exported="false" />
-        <activity
-            android:name=".Dash.home_Dash"
             android:exported="false" />
         <activity
             android:name=".activity.ForgotPassword"
@@ -35,16 +83,19 @@
             android:name=".activity.fragmentStart"
             android:exported="false" />
         <activity
-            android:name=".activity.mainPage"
-            android:exported="false" />
-        <activity
             android:name=".activity.registration"
+            android:exported="true" />
+        <activity
+            android:name=".activity.StartAnimation.MainScreen"
             android:exported="true" />
         <activity
             android:name=".activity.login"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -14,10 +14,10 @@ import com.mjd.sci_acc.R;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 
 //private static final int GALLERY_INTENT_CODE = 1023 ;
@@ -99,8 +99,8 @@ public class asdds extends AppCompatActivity {
 //                POST_req(loginUrl, data, 10000);
                 new MyTask().execute();
             }
-});
-}
+        });
+    }
 
     public class MyTask extends AsyncTask<Void, Void, Void> {
         String data = "pass=d&nama=d&x=37&y=18";
@@ -112,6 +112,7 @@ public class asdds extends AppCompatActivity {
             POST_req(loginUrl, data, 10000);
             return null;
         }
+
         public String POST_req(String url, String post_data, int len) {
             URL addr = null;
             try {
@@ -152,7 +153,7 @@ public class asdds extends AppCompatActivity {
                 return "Out stream error";
             }
             try {
-                ((DataOutputStream) dataOS).writeBytes(data.toString());
+                dataOS.writeBytes(data.toString());
             } catch (IOException e) {
                 return "Out stream error 1";
             }
@@ -191,16 +192,12 @@ public class asdds extends AppCompatActivity {
 
             java.io.InputStream in = null;
             try {
-                in = (java.io.InputStream) conn.getInputStream();
+                in = conn.getInputStream();
             } catch (IOException e) {
                 return "In stream error";
             }
             InputStreamReader reader = null;
-            try {
-                reader = new InputStreamReader(in, "UTF-8");
-            } catch (UnsupportedEncodingException e) {
-                return "In stream error";
-            }
+            reader = new InputStreamReader(in, StandardCharsets.UTF_8);
             char[] buf = new char[len];
             try {
                 reader.read(buf);
@@ -223,7 +220,7 @@ public class asdds extends AppCompatActivity {
                 COOKIES_HEADER = "Cookie";
             }
             cook_new = conn.getHeaderField(COOKIES_HEADER);
-            if (cook_new.indexOf("sid", 0) >= 0) {
+            if (cook_new.indexOf("sid") >= 0) {
                 SharedPreferences.Editor editor = sh_pref_cookie.edit();
                 editor.putString("Cookie", cook_new);
                 editor.commit();
@@ -239,7 +236,6 @@ public class asdds extends AppCompatActivity {
                 conn.setRequestProperty(COOKIES_HEADER, cook);
             }
         }
-
 
 
         @Override

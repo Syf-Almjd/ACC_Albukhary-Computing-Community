@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant2"
+    tools:context=".Dash.mcmc">
+
+    <Button
+        android:id="@+id/moretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:text="More About MCMC"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@id/option1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Siber Muda Team"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Master Youth Program"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/option1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="TechEmpower Team"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_back"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

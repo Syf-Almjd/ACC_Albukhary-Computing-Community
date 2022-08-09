@@ -3,18 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <WebView
         android:id="@+id/confirmpage_webpage"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <RelativeLayout
         android:id="@+id/WhiteLine"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
-        android:visibility="invisible"
-        ></RelativeLayout>
+        android:visibility="invisible"></RelativeLayout>
 
     <ImageButton
         android:id="@+id/backbtn2"

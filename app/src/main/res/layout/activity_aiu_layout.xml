@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dash.aiuLayout">
+
+    <Button
+        android:id="@+id/option4"
+        android:layout_width="292dp"
+        android:layout_height="88dp"
+        android:layout_above="@id/option2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="AIU Official Website"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@id/option1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="AIU Social Business"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:lineSpacingExtra="5dp"
+        android:text="Albukhary International University \nSchools &amp; Centers"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/option1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Students' Portal"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/option5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/option3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/semibold"
+        android:text="Academic Calendar"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/contactAIU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:text="Contact AIU"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <ImageButton
+        android:id="@+id/backbtnAIU"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_back" />
+
+</RelativeLayout>

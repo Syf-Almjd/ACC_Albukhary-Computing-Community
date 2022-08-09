@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbtnSchool"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/txtSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/semibold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#4F5748"
+            android:textSize="18dp" />
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Viewbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/backbtnSchool"
+        android:background="@drawable/search_bg2"
+        android:text="View More!"
+
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/backbtnSchool"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_back" />
+
+</RelativeLayout>
